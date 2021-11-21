@@ -1,0 +1,45 @@
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.AssemblyInfoInputs.cache
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.AssemblyInfo.cs
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.csproj.CoreCompileInputs.cache
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.deps.json
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.runtimeconfig.json
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.runtimeconfig.dev.json
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\bin\Debug\net5.0\ref\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.pdb
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Debug\net5.0\ref\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.pdb
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.genruntimeconfig.cache
+C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.csproj.AssemblyReference.cache
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.deps.json
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.runtimeconfig.json
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.runtimeconfig.dev.json
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\bin\Debug\net5.0\ref\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\bin\Debug\net5.0\Centromedico.Database.pdb
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.csproj.AssemblyReference.cache
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.AssemblyInfoInputs.cache
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.AssemblyInfo.cs
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.csproj.CoreCompileInputs.cache
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\obj\Debug\net5.0\ref\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.pdb
+C:\Users\KevinJ\source\repos\Centro Medico\Cliente\CentromedicoClienteDatabase\obj\Debug\net5.0\Centromedico.Database.genruntimeconfig.cache
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\bin\Debug\net5.0\Centromedico.Database.deps.json
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\bin\Debug\net5.0\Centromedico.Database.runtimeconfig.json
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\bin\Debug\net5.0\Centromedico.Database.runtimeconfig.dev.json
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\bin\Debug\net5.0\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\bin\Debug\net5.0\ref\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\bin\Debug\net5.0\Centromedico.Database.pdb
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\obj\Debug\net5.0\Centromedico.Database.csproj.AssemblyReference.cache
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\obj\Debug\net5.0\Centromedico.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\obj\Debug\net5.0\Centromedico.Database.AssemblyInfoInputs.cache
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\obj\Debug\net5.0\Centromedico.Database.AssemblyInfo.cs
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\obj\Debug\net5.0\Centromedico.Database.csproj.CoreCompileInputs.cache
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\obj\Debug\net5.0\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\obj\Debug\net5.0\ref\Centromedico.Database.dll
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\obj\Debug\net5.0\Centromedico.Database.pdb
+C:\Users\KevinJ\source\repos\Centro Medico\CentromedicoDatabase\obj\Debug\net5.0\Centromedico.Database.genruntimeconfig.cache

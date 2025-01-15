@@ -12,8 +12,8 @@ namespace Centromedico.Database.DbModels
     public partial class balance_caja
     {
         [Key]
+        public int ID { get; set; }
         public int medicosID { get; set; }
-        [Key]
         [Column(TypeName = "date")]
         public DateTime fecha { get; set; }
         public int secretariasID { get; set; }

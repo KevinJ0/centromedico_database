@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Centromedico.Database.DbModels
 {
-    [Index(nameof(segurosID), Name = "IX_cobertura_medicos_segurosID")]
+    [Index(nameof(segurosID))]
     public partial class cobertura_medicos
     {
         [Key]
@@ -17,13 +17,9 @@ namespace Centromedico.Database.DbModels
         [Key]
         public int segurosID { get; set; }
         public int serviciosID { get; set; }
-       // public int? especialidadesID { get; set; }
         [Column(TypeName = "money")]
         public decimal pago { get; set; }
 
-       /* [ForeignKey(nameof(especialidadesID))]
-        [InverseProperty("cobertura_medicos")]
-        public virtual especialidades especialidades { get; set; }*/
         [ForeignKey(nameof(medicosID))]
         [InverseProperty("cobertura_medicos")]
         public virtual medicos medicos { get; set; }

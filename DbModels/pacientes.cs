@@ -36,11 +36,14 @@ namespace Centromedico.Database.DbModels
         [StringLength(45)]
         public string apellido_tutor { get; set; }
         public bool extranjero { get; set; }
-        [StringLength(10)]
+        [StringLength(15)]
         public string contacto { get; set; }
         [StringLength(15)]
         public string doc_identidad_tutor { get; set; }
-        //  public int? edad {get;set;}
+           public int? edad { get {
+                return DateTime.Today.AddTicks(-fecha_nacimiento.Ticks).Year - 1;
+            }}
+        public bool confirm_doc_identidad { set; get; }
         public bool menor_un_año { get; set; }
         public string MyIdentityUserID { get; set; }
 

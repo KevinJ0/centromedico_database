@@ -1,20 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KevinJ\\source\\repos\\Centro Medico\\CentromedicoDatabase\\Centromedico.Database.csproj": {}
+    "C:\\Users\\Kevin\\Documents\\New folder\\Centro Medico\\CentromedicoDatabase\\Centromedico.Database.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KevinJ\\source\\repos\\Centro Medico\\CentromedicoDatabase\\Centromedico.Database.csproj": {
+    "C:\\Users\\Kevin\\Documents\\New folder\\Centro Medico\\CentromedicoDatabase\\Centromedico.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KevinJ\\source\\repos\\Centro Medico\\CentromedicoDatabase\\Centromedico.Database.csproj",
+        "projectUniqueName": "C:\\Users\\Kevin\\Documents\\New folder\\Centro Medico\\CentromedicoDatabase\\Centromedico.Database.csproj",
         "projectName": "Centromedico.Database",
-        "projectPath": "C:\\Users\\KevinJ\\source\\repos\\Centro Medico\\CentromedicoDatabase\\Centromedico.Database.csproj",
-        "packagesPath": "C:\\Users\\KevinJ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KevinJ\\source\\repos\\Centro Medico\\CentromedicoDatabase\\obj\\",
+        "projectPath": "C:\\Users\\Kevin\\Documents\\New folder\\Centro Medico\\CentromedicoDatabase\\Centromedico.Database.csproj",
+        "packagesPath": "C:\\Users\\Kevin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kevin\\Documents\\New folder\\Centro Medico\\CentromedicoDatabase\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\KevinJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +28,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +42,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -65,7 +78,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -74,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

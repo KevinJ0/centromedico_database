@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 using Centromedico.Database.DbModels;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
@@ -10,10 +8,14 @@ namespace Centromedico.Database.Context
 {
     public partial class MyDbContext : IdentityDbContext
     {
+        private string connString;
         public MyDbContext()
         {
         }
-
+        public MyDbContext(string connString)
+        {
+            this.connString = connString;
+        }
         public MyDbContext(DbContextOptions<MyDbContext> options)
             : base(options)
         {
@@ -22,6 +24,7 @@ namespace Centromedico.Database.Context
 
         public virtual DbSet<MyIdentityUser> MyIdentityUsers { get; set; }
         public virtual DbSet<analisis> analisis { get; set; }
+        public virtual DbSet<user_info> user_info { get; set; }
         public virtual DbSet<analisis_categoria> analisis_categoria { get; set; }
         public virtual DbSet<balance_caja> balance_caja { get; set; }
         public virtual DbSet<citas> citas { get; set; }
@@ -48,15 +51,14 @@ namespace Centromedico.Database.Context
         public virtual DbSet<token> token { get; set; }
         public virtual DbSet<turnos> turnos { get; set; }
         public virtual DbSet<dias_feriados> dias_feriados { get; set; }
+        public virtual DbSet<grupo_doctor_secretaria> grupo_doctor_secretaria { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-#pragma warning disable CS1030 // #advertencia: 'To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.'
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer(connString);
             }
-#pragma warning restore CS1030 // #advertencia: 'To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.'
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -69,9 +71,42 @@ namespace Centromedico.Database.Context
 
             modelBuilder.Entity<MyIdentityUser>(entity =>
             {
+
+
                 entity.HasIndex(e => e.NormalizedUserName, "UserNameIndex")
                     .IsUnique()
                     .HasFilter("([NormalizedUserName] IS NOT NULL)");
+
+            });
+
+
+
+
+            modelBuilder.Entity<grupo_doctor_secretaria>(entity =>
+            {
+
+                entity.Property(e => e.MyIdentityUserID)
+                    .IsRequired()
+                    .HasMaxLength(450);
+
+                entity.Property(e => e.group_name)
+                    .IsRequired()
+                    .HasMaxLength(450);
+
+                entity.Property(e => e.type)
+                .IsRequired()
+                .HasMaxLength(50);
+
+
+                entity.HasOne(d => d.medicos)
+                    .WithMany(p => p.grupo_doctor_secretaria)
+                    .HasForeignKey(d => d.medicosID)
+                    .HasConstraintName("FK_grupo_medicos");
+
+                entity.HasOne(d => d.MyIdentityUsers)
+                    .WithMany(p => p.grupo_doctor_secretaria)
+                    .HasForeignKey(d => d.MyIdentityUserID)
+                    .HasConstraintName("FK_grupo_users");
             });
 
             modelBuilder.Entity<analisis>(entity =>
@@ -91,8 +126,8 @@ namespace Centromedico.Database.Context
 
             modelBuilder.Entity<balance_caja>(entity =>
             {
-                entity.HasKey(e => new { e.medicosID, e.fecha })
-                    .HasName("PK__balance___EC0197FC91E6A2EE");
+                entity.HasKey(e => new { e.ID })
+                    .HasName("PK_Id");
 
                 entity.HasComment("esto es metadato, en caso de que se elimine a la secretaria");
 
@@ -125,16 +160,18 @@ namespace Centromedico.Database.Context
 
                 entity.Property(e => e.contacto_whatsapp).HasDefaultValueSql("((0))");
 
+                entity.Property(e => e.deleted).HasDefaultValueSql("((0))");
+
                 entity.Property(e => e.estado).HasDefaultValueSql("((1))");
 
                 entity.Property(e => e.segurosID).HasComment("NULL por defecto es sin seguro");
 
 
-             /*   entity.HasOne(d => d.especialidades)
-                    .WithMany(p => p.citas)
-                    .HasForeignKey(d => d.especialidadesID)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_citas_especialidades");*/
+                /*   entity.HasOne(d => d.especialidades)
+                       .WithMany(p => p.citas)
+                       .HasForeignKey(d => d.especialidadesID)
+                       .OnDelete(DeleteBehavior.ClientSetNull)
+                       .HasConstraintName("FK_citas_especialidades");*/
 
                 entity.HasOne(d => d.medicos)
                     .WithMany(p => p.citas)
@@ -163,7 +200,7 @@ namespace Centromedico.Database.Context
                     .WithMany(p => p.citas)
                     .HasForeignKey(d => d.serviciosID)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_citas_serviciosMedicos");
+                    .HasConstraintName("FK_citas_servicios");
 
             });
 
@@ -216,13 +253,22 @@ namespace Centromedico.Database.Context
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_coberturaMedicos_seguros");
 
-            /*    entity.HasOne(d => d.especialidades)
-                    .WithMany(p => p.cobertura_medicos)
-                    .HasForeignKey(d => d.especialidadesID)
-                    .OnDelete(DeleteBehavior.Cascade)
-                    .HasConstraintName("FK_coberturaMedicos_especialidades");*/
+                /*    entity.HasOne(d => d.especialidades)
+                        .WithMany(p => p.cobertura_medicos)
+                        .HasForeignKey(d => d.especialidadesID)
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasConstraintName("FK_coberturaMedicos_especialidades");*/
             });
 
+
+            modelBuilder.Entity<user_info>(entity =>
+            {
+                entity.HasKey(e => new { e.doc_identidad })
+                    .HasName("pk_user_info");
+                entity.HasCheckConstraint("ck_sexo", "Sexo debe de ser m o f");
+
+
+            });
 
 
             modelBuilder.Entity<especialidades>(entity =>
@@ -257,8 +303,6 @@ namespace Centromedico.Database.Context
                     .HasForeignKey(d => d.citasID)
                     .HasConstraintName("FK_codVerificacion_citas")
                     .OnDelete(DeleteBehavior.ClientCascade);
-
-
 
             });
 
@@ -365,7 +409,7 @@ namespace Centromedico.Database.Context
                 entity.Property(e => e.wednesday_until).HasColumnType("time(4)");
 
                 entity.Property(e => e.free_time_from).HasColumnType("time(4)");
-                
+
                 entity.Property(e => e.free_time_until).HasColumnType("time(4)");
             });
 
@@ -410,8 +454,6 @@ namespace Centromedico.Database.Context
                 entity.Property(e => e.cedula).IsFixedLength(true);
 
                 entity.Property(e => e.colegiatura).IsFixedLength(true);
-
-                entity.Property(e => e.correo).IsFixedLength(true);
 
                 entity.Property(e => e.estado).HasDefaultValueSql("((1))");
 

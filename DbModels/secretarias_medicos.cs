@@ -19,6 +19,7 @@ namespace Centromedico.Database.DbModels
         [ForeignKey(nameof(medicosID))]
         [InverseProperty("secretarias_medicos")]
         public virtual medicos medicos { get; set; }
+
         [ForeignKey(nameof(secretariasID))]
         [InverseProperty("secretarias_medicos")]
         public virtual secretarias secretarias { get; set; }

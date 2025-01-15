@@ -13,3 +13,34 @@ C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Release\net5.0\Cent
 C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Release\net5.0\ref\Centromedico.Database.dll
 C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Release\net5.0\Centromedico.Database.pdb
 C:\Users\KevinJ\source\repos\CentromedicoClienteDatabase\obj\Release\net5.0\Centromedico.Database.genruntimeconfig.cache
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.deps.json
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.runtimeconfig.json
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.runtimeconfig.dev.json
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.dll
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\ref\Centromedico.Database.dll
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.pdb
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.csproj.AssemblyReference.cache
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.AssemblyInfoInputs.cache
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.AssemblyInfo.cs
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.dll
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\ref\Centromedico.Database.dll
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.pdb
+C:\Users\Pc\source\repos\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.genruntimeconfig.cache
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.deps.json
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.runtimeconfig.json
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.runtimeconfig.dev.json
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.dll
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\bin\Release\net5.0\Centromedico.Database.pdb
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.csproj.AssemblyReference.cache
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.AssemblyInfoInputs.cache
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.AssemblyInfo.cs
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.sourcelink.json
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.dll
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\refint\Centromedico.Database.dll
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.pdb
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\Centromedico.Database.genruntimeconfig.cache
+C:\Users\Kevin\Documents\New folder\Centro Medico\CentromedicoDatabase\obj\Release\net5.0\ref\Centromedico.Database.dll

@@ -12,7 +12,6 @@ namespace Centromedico.Database.DbModels
     {
         public especialidades()
         {
-          //  citas = new HashSet<citas>();
             especialidades_medicos = new HashSet<especialidades_medicos>();
         }
 
@@ -22,12 +21,7 @@ namespace Centromedico.Database.DbModels
         [StringLength(50)]
         public string descrip { get; set; }
         [Required]
-        public bool? estado { get; set; }
-
-     /*   [InverseProperty("especialidades")]
-        public virtual ICollection<cobertura_medicos> cobertura_medicos { get; set; }*/
-/*        [InverseProperty("especialidades")]
-        public virtual ICollection<citas> citas { get; set; }*/
+        public bool estado { get; set; }
         [InverseProperty("especialidades")]
         public virtual ICollection<especialidades_medicos> especialidades_medicos { get; set; }
     }

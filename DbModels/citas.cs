@@ -27,7 +27,6 @@ namespace Centromedico.Database.DbModels
         [StringLength(6)]
         public string cod_verificacionID { get; set; }
         public int pacientesID { get; set; }
-        [Column(TypeName = "text")]
         public string nota { get; set; }
         [StringLength(10)]
         public string contacto { get; set; }
@@ -48,11 +47,13 @@ namespace Centromedico.Database.DbModels
         //public int especialidadesID { get; set; }
         [Required]
         public bool? estado { get; set; }
+        public bool deleted { get; set; }
         public int consultorio { get; set; }
+        public string observacion { get; set; }
 
-       /* [ForeignKey(nameof(especialidadesID))]
-        [InverseProperty("citas")]
-        public virtual especialidades especialidades { get; set; }*/ 
+        /*[ForeignKey(nameof(especialidadesID))]
+         [InverseProperty("citas")]
+         public virtual especialidades especialidades { get; set; }*/
         [ForeignKey(nameof(medicosID))]
         [InverseProperty("citas")]
         public virtual medicos medicos { get; set; }

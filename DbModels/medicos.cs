@@ -36,7 +36,6 @@ namespace Centromedico.Database.DbModels
         [StringLength(30)]
         public string nombre { get; set; }
         [StringLength(40)]
-        [Required]
         public string apellido { get; set; }
         [Required]
         [StringLength(1)]
@@ -45,8 +44,6 @@ namespace Centromedico.Database.DbModels
         public DateTime? fecha_nacimiento { get; set; }
         [Column(TypeName = "date")]
         public DateTime fecha_creacion { get; set; }
-        [StringLength(50)]
-        public string correo { get; set; }
         public string url_twitter { get; set; }
         public string url_facebook { get; set; }
         public string url_instagram { get; set; }
@@ -87,7 +84,7 @@ namespace Centromedico.Database.DbModels
         public virtual ICollection<secretarias_medicos> secretarias_medicos { get; set; }
         [InverseProperty("medicos")]
         public virtual ICollection<servicios_medicos> servicios_medicos { get; set; }
-
-
+        [InverseProperty("medicos")]
+        public virtual ICollection<grupo_doctor_secretaria> grupo_doctor_secretaria { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Centromedico.Database.DbModels
 
         public MyIdentityUser()
         {
-            grupo_doctor_secretaria = new HashSet<grupo_doctor_secretaria>();
+         //   grupo_doctor_secretaria = new HashSet<grupo_doctor_secretaria>();
 
         }
         [InverseProperty("MyIdentityUsers")]
@@ -24,8 +24,8 @@ namespace Centromedico.Database.DbModels
         public virtual ICollection<clientes> clientes { get; set; }
         [InverseProperty("MyIdentityUsers")]
         public virtual ICollection<pacientes> pacientes { get; set; }
-        [InverseProperty("MyIdentityUsers")]
-        public virtual ICollection<grupo_doctor_secretaria> grupo_doctor_secretaria { get; set; }
+        //[InverseProperty("MyIdentityUsers")]
+        //public virtual ICollection<grupo_doctor_secretaria> grupo_doctor_secretaria { get; set; }
 
 
         [StringLength(15)]

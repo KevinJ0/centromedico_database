@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
@@ -10,9 +8,13 @@ namespace Centromedico.Database.DbModels
 {
     public partial class turnos
     {
+
         [Key]
         public int medicosID { get; set; }
-        public byte turno_atendido { get; set; }
+        public int turno_actual { get; set; }
+        public int turno_atendido { get; set; }
+        public DateTime fecha { get; set; }
+
 
         [ForeignKey(nameof(medicosID))]
         [InverseProperty("turnos")]

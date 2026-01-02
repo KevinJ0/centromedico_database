@@ -17,14 +17,14 @@ namespace Centromedico.Database.DbModels
         [Required]
         [StringLength(50)]
         public string type { get; set; }
-        [Required]
-        [StringLength(450)]
-        public string MyIdentityUserID { get; set; }
+        //[Required]
+        //[StringLength(450)]
+        //public string MyIdentityUserID { get; set; }
         public int medicosID { get; set; }
-
+        /*
         [ForeignKey(nameof(MyIdentityUserID))]
         [InverseProperty("grupo_doctor_secretaria")]
-        public virtual MyIdentityUser MyIdentityUsers { get; set; }
+        public virtual MyIdentityUser? MyIdentityUsers { get; set; }*/
 
         [ForeignKey(nameof(medicosID))]
         [InverseProperty("grupo_doctor_secretaria")]

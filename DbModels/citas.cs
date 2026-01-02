@@ -50,6 +50,7 @@ namespace Centromedico.Database.DbModels
         public bool deleted { get; set; }
         public int consultorio { get; set; }
         public string observacion { get; set; }
+        public DateTime? deleted_date { get; set; } 
 
         /*[ForeignKey(nameof(especialidadesID))]
          [InverseProperty("citas")]

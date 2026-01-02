@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Centromedico.Database")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aa9714c23a9f404a1420d1a141d6357dfc23b78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a582563758b866c2c4070ffd9f0cf8c91ba28e67")]
 [assembly: System.Reflection.AssemblyProductAttribute("Centromedico.Database")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Centromedico.Database")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

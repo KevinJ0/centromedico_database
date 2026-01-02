@@ -85,10 +85,10 @@ namespace Centromedico.Database.Context
             modelBuilder.Entity<grupo_doctor_secretaria>(entity =>
             {
 
-                entity.Property(e => e.MyIdentityUserID)
+               /* entity.Property(e => e.MyIdentityUserID)
                     .IsRequired()
                     .HasMaxLength(450);
-
+               */
                 entity.Property(e => e.group_name)
                     .IsRequired()
                     .HasMaxLength(450);
@@ -103,11 +103,11 @@ namespace Centromedico.Database.Context
                     .HasForeignKey(d => d.medicosID)
                     .HasConstraintName("FK_grupo_medicos");
 
-                entity.HasOne(d => d.MyIdentityUsers)
+               /* entity.HasOne(d => d.MyIdentityUsers)
                     .WithMany(p => p.grupo_doctor_secretaria)
                     .HasForeignKey(d => d.MyIdentityUserID)
                     .HasConstraintName("FK_grupo_users");
-            });
+            */});
 
             modelBuilder.Entity<analisis>(entity =>
             {
